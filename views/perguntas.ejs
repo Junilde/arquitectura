@@ -1,0 +1,52 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> Todas actividades</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Criar Novas Perguntas</h2>
+            <span class="text-light">página para configurar actividade</span>
+        </div>
+
+        <!-- add user form -->
+        <form action="/api/users" method="POST" id="add_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="text-light">Texto da Pergunta</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" value="" placeholder="activity name">
+                </div>
+                <div class="form-group">
+                    <label for="name" class="text-light">Description Activity</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="activity" value="" placeholder="description activity">
+                </div>
+                <div class="form-group">
+                    <label for="name" class="text-light">Página de Explicação da actividade</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="url" value="" placeholder="url">
+                </div>
+              
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Gravar</button>
+                </div>
+        
+            </div>
+        </form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+
+<!-- include header -->
+<%- include('include/_footer') %>
+<!-- /include header -->
