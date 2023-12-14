@@ -1,8 +1,8 @@
 // UserBuilder.js
 
 class perguntaBuild {
-    constructor(Userdb) {
-        this.user = new Userdb();
+    constructor() {
+        this.user={}
     }
    
 
